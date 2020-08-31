@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body {
+    background-color: #333;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#quote-box {
+    width: 450px;
+    background-color: aliceblue;
+    height: auto;
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+#quote-box .quote-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.45em;
+    padding: 15px;
+}
+
+#quote-box .quote-author {
+    padding-top: 20px;
+    font-size: 1.2em;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+@media (max-width: 450px) {
+    #quote-box {
+        width: 90%;
+        margin: 10px;
+    }
+}
